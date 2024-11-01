@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,15 +6,55 @@
     <style>
         body {
             background-image: url('https://cdn.sharperimagestintandwraps.com/wp-content/uploads/sites/3/2015/12/06003718/Red-Gray-Urban-800.gif');
-            background-size: cover; /* Ensure the background covers the entire page */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            background-attachment: fixed; /* Make the background fixed while scrolling */
-            color: white; /* white text */
-            font-family: 'Pacifico', cursive; /* Pacifico font for cursive text */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 150px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
 
         h2, h3, p, ul {
-            color: white; /* Ensure all text elements are white */
+            color: white;
+            text-align: center;
         }
 
         img {
@@ -24,32 +63,96 @@
             width: 600px;
         }
 
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.2em;
+        }
+
         a {
-            color: white; /* white color for links */
+            color: white;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h2>Drip Committee</h2>
-    <p>Drip$ett, it's not just fashion it's a lif3$tyle.</p>
-    <hr>
-    <img src="https://images7.alphacoders.com/888/thumb-1920-888641.jpg" alt="Supreme Bart">
-    <hr>
 
-    <h2>Member$ Only</h2>
-    <p>Drip$ett the trend$</p>
-    <hr>
+    
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#members">Members</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <h3>Facts</h3>
-    <ul>
-        <li><a href="https://www.imdb.com/title/tt0096697/" target="_blank">E$t</a></li>
-    </ul>
+    
+    <section class="hero">
+        <h1>Drip Committee</h1>
+        <p>Drip$ett, it's not just fashion; it's a lif3$tyle.</p>
+    </section>
 
-    <img src="https://wallpapersok.com/images/high/sad-bart-simpsons-supreme-udu5dlw4bu6zr0ze.jpg" alt="Supreme Bart 2">
-    <hr>
-    <p>&copy; 2024 Drip Committee</p>
+    
+    <section id="about" class="container">
+        <h2>About Drip Committee</h2>
+        <p>Drip Committee brings you exclusive streetwear that combines trend and authenticity. Join us and set the trends instead of following them.</p>
+        <img src="https://images7.alphacoders.com/888/thumb-1920-888641.jpg" alt="Supreme Bart">
+    </section>
+
+    
+    <section id="members" class="container">
+        <h2>Member$ Only</h2>
+        <p>Drip$ett the trend$ - Exclusive access to styles that redefine fashion. Are you ready to be part of the committee?</p>
+        <h3>Facts</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/dripcommittee/profilecard/?igsh=MXh2OGF6cjV5b3NiZQ==" target="_blank">E$t</a></li>
+        </ul>
+        <img src="https://wallpapersok.com/images/high/sad-bart-simpsons-supreme-udu5dlw4bu6zr0ze.jpg" alt="Supreme Bart 2">
+    </section>
+
+    
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="pics/FRONT MOCKUP 2.jpg" alt="The W00">
+            <img src="pics/Untitled_Artwork 2.jpg" alt="Letterm3nz">
+        </div>
+    </section>
+
+    
+    <section id="join" class="container">
+        <h2>Join the Community</h2>
+        <p>Follow us on social media and stay updated on exclusive releases.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/dripcommittee/profilecard/?igsh=MXh2OGF6cjV5b3NiZQ==" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Drip Committee. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
