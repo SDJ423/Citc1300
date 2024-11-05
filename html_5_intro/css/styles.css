@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: green; /
+    background-color: green; 
 }
 
 #container {
@@ -121,6 +121,7 @@ main img, .image-container img {
         margin: 0; 
     }
 }
+
 
 
 
