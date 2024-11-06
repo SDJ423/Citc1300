@@ -1,9 +1,22 @@
+body, h1, h2, h3, p, a {
+    color: #888;  
+}
+
+
+.responsive-image {
+    width: 100%;           
+    height: auto;        
+    display: block;        
+    margin: 20px 0;       
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     line-height: 1.6;
-    background-color: green; 
+    background-color: beige;
 }
+
 
 #container {
     max-width: 1000px;
@@ -14,18 +27,22 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; 
+    color: white;  
     padding: 1em;
     text-align: center;
     border-radius: 8px 8px 0 0;
 }
 
+
 header h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
 }
+
+
 
 nav ul {
     list-style: none;
@@ -41,24 +58,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: grey;  
     text-decoration: none;
     font-weight: bold;
 }
+
 
 main {
     padding: 1.5em;
 }
 
 h2 {
-    color: #333;
+    color: #888;  
     margin-bottom: 0.5em;
     text-align: center;
     margin-top: 20px;
 }
 
 h3 {
-    color: #333;
+    color: #888; 
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -75,9 +93,10 @@ hr {
     border-top: 1px solid #ddd;
 }
 
+
 footer {
     background-color: #333;
-    color: #fff;
+    color: #fff;  
     text-align: center;
     padding: 1em 0;
     margin-top: 2em;
@@ -88,15 +107,27 @@ footer p {
     font-size: 0.9em;
 }
 
-main img, .image-container img {
-    width: 100%;             
-    max-width: 480px;       
-    height: auto;            
-    display: block;
-    margin: 1em auto;       
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+#content-container {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
 }
+
+.column {
+    flex: 1;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+#mindfulness-section {
+    background-color: tan;
+}
+
+#benefits-aside {
+    background-color: tan;
+}
+
 
 .image-container {
     display: flex;
@@ -106,11 +137,20 @@ main img, .image-container img {
 }
 
 .image-container img {
-    flex: 1 1 48%;          
-    max-width: 100%;        
+    flex: 1 1 48%;         
+    max-width: 100%;       
+    height: auto;            
+    margin: 1em 0;        
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 @media (max-width: 768px) {
+    #content-container {
+        flex-direction: column;
+    }
+
     .image-container {
         flex-direction: column;
         align-items: center;
@@ -121,6 +161,38 @@ main img, .image-container img {
         margin: 0; 
     }
 }
+
+
+#bottom-content-container {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;  
+}
+
+.column {
+    flex: 1;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: transparent; 
+    border: 2px solid #D2B48C;  
+}
+
+
+#mindfulness-section,
+#benefits-aside,
+#tips-section,
+#everyday-practices-section {
+    background-color: transparent; 
+    border: 2px solid #D2B48C;  
+}
+
+
+@media (max-width: 768px) {
+    #bottom-content-container {
+        flex-direction: column;
+    }
+}
+
 
 
 
