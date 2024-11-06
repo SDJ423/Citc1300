@@ -46,11 +46,19 @@ nav ul li {
     margin: 0 1em;
 }
 
+
 nav ul li a {
     color: grey;
     text-decoration: none;
     font-weight: bold;
 }
+
+
+nav ul li a:hover {
+    color: #ff6347; 
+    text-decoration: underline; 
+}
+
 
 main {
     padding: 2em;
