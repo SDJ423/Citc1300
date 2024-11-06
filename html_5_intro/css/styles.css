@@ -1,36 +1,31 @@
-body, h1, h2, h3, p, a {
-    color: #888;  
-}
-
-
-.responsive-image {
-    width: 100%;           
-    height: auto;          
-    display: block;        
-    margin: 20px 0;       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: beige;
+    color: #333;
+    line-height: 1.6;
 }
 
 
 #container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
-    background-color: beige; 
+    background-color: beige;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 header {
-    background-color: #333; 
-    color: white; 
+    background-color: #333;
+    color: grey;
     padding: 1em;
     text-align: center;
     border-radius: 8px 8px 0 0;
@@ -38,9 +33,7 @@ header {
 
 header h1 {
     font-size: 2em;
-    margin-bottom: 0.5em;
 }
-
 
 
 nav ul {
@@ -48,7 +41,8 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #333;
-    padding: 0.5em 0;
+    padding: 1em 0;
+    margin-top: 1em;
     border-radius: 0 0 8px 8px;
 }
 
@@ -57,27 +51,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: grey;  
+    color: grey;
     text-decoration: none;
     font-weight: bold;
 }
 
 
 main {
-    padding: 1.5em;
+    padding: 2em;
+}
+
+h2, h3 {
+    color: #555;
+    margin-bottom: 1em;
 }
 
 h2 {
-    color: #888;  
-    margin-bottom: 0.5em;
     text-align: center;
     margin-top: 20px;
-}
-
-h3 {
-    color: #888;  
-    margin-top: 1em;
-    margin-bottom: 0.5em;
 }
 
 ul {
@@ -93,40 +84,41 @@ hr {
 }
 
 
-footer {
-    background-color: #333;
-    color: #fff;  
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 2em;
-    border-radius: 8px;
-}
-
-footer p {
-    font-size: 0.9em;
-}
-
-
-#content-container {
+form {
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
     margin-bottom: 1em;
 }
 
-.column {
-    flex: 1;
-    padding: 1em;
-    border-radius: 8px;
+form input, form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
 }
 
-#mindfulness-section {
-    background-color: tan;
+form button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#benefits-aside {
-    background-color: tan;
+form button:hover {
+    background-color: #555;
 }
 
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
 
 .image-container {
     display: flex;
@@ -136,17 +128,28 @@ footer p {
 }
 
 .image-container img {
-    flex: 1 1 48%;         
-    max-width: 100%;       
-    height: auto;            
-    margin: 1em 0;        
+    flex: 1 1 48%;
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 8px;
+}
+
+
 @media (max-width: 768px) {
-    #content-container {
+   
+    #content-container, #bottom-content-container {
         flex-direction: column;
     }
 
@@ -156,52 +159,32 @@ footer p {
     }
 
     .image-container img {
-        flex: 1 1 100%; 
-        margin: 0; 
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1em 0;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .responsive-image {
+        margin: 10px 0;
     }
 }
 
 
-#bottom-content-container {
-    display: flex;
-    gap: 1em;
-    margin-top: 2em;  
-}
-
-.column {
-    flex: 1;
-    padding: 1em;
-    border-radius: 8px;
-    background-color: transparent; 
-    border: 2px solid #D2B48C;  
-}
-
-
-#mindfulness-section,
-#benefits-aside,
-#tips-section,
-#everyday-practices-section {
-    background-color: transparent; 
-    border: 2px solid #D2B48C;  
-}
-
-
-@media (max-width: 768px) {
-    #bottom-content-container {
+@media (max-width: 1024px) {
+   
+    #content-container, #bottom-content-container {
         flex-direction: column;
     }
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    visibility: hidden;
-    overflow: hidden;
-}
 
 
 
