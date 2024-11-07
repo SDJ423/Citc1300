@@ -1,0 +1,254 @@
+/* Global Styles */
+html, body {
+    height: 100%;                
+    margin: 0;                  
+    padding: 0;                  
+    width: 100%;                 
+}
+
+/* Other Global Styles */
+body, h1, h2, h3, p, a {
+    color: #333; 
+    box-shadow: none;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.responsive-image {
+    width: 100%;           
+    height: auto;          
+    display: block;        
+    margin: 20px 0;       
+}
+
+#container {
+    background-color: #faa21b;
+    max-width: 1000px;
+    margin: 0 auto;           
+    padding: 1em;
+    border-radius: 8px;
+    width: 80%;               
+    box-sizing: border-box;   
+}
+
+header {
+    background-color: #faa21b; 
+    color: #333; 
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+nav {
+    background-color: #faa21b; 
+    padding: 10px 0;           
+    margin: 0;                
+    text-align: center;
+    width: 100%;              
+    box-sizing: border-box;   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0; 
+}
+
+/* Navigation item link styles */
+nav li {
+    margin: 0 1em;
+}
+
+nav li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    color: #fa7d1b;
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+nav li a:hover {
+    background-color: green;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #000;
+    text-shadow: 1px 1px 1px #fa7d1b;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;    
+    padding-left: 20px;       
+    margin: 0;                
+}
+
+li {
+    margin-bottom: 10px;      
+    text-align: left;         
+}
+
+hr {
+    border: 0;              
+    border-top: 2px solid #333; 
+    margin: 20px 0;          
+    width: 100%;             
+    box-sizing: border-box;  
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 8px;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 1px #fa7d1b;
+}
+
+#content-container {
+    display: block; 
+    margin-bottom: 1em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.image-container img {
+    flex: 1 1 48%; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 1em 0;        
+    border-radius: 8px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #content-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image-container img {
+        flex: 1 1 100%; 
+        margin: 0; 
+    }
+    
+    #health-wellness-image {
+        display: block;         
+        max-width: 100%;       
+        height: auto;           
+        margin: 20px auto;      
+    }
+
+    main {
+        text-align: center;     
+        margin-bottom: 2em;    
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%; 
+        padding: 0;
+    }
+
+    nav li a {
+        width: 100%; 
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        padding: 10px 15px;
+        font-size: 18px;
+        margin: 5px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    #container {
+        width: 100%;               
+        margin: 0;                 
+        padding: 0;                
+        border: none;              
+    }
+
+    nav {
+        padding: 0;                
+        margin: 0;                 
+    }
+
+    nav li a {
+        background-color: #000;
+    }
+
+    #bottom-content-container {
+        display: flex;
+        gap: 1em;
+        margin-top: 2em;  
+    }
+
+    .column {
+        flex: 1;
+        padding: 1em;
+        border-radius: 8px;
+        background-color: transparent; 
+        border: 2px solid #D2B48C;  
+    }
+}
+
+/* Accessibility Styles */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+
