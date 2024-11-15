@@ -147,6 +147,12 @@ a.button:hover {
     transform: translateY(-3px);
 }
 
+/* Video Styling */
+video {
+    width: 100%; /* Makes the video 100% of its container's width */
+    height: auto; /* Keeps aspect ratio intact */
+}
+
 /* Responsive Layout */
 @media (max-width: 768px) {
     .menu-items {
@@ -168,6 +174,7 @@ a.button:hover {
         width: 90%;
     }
 }
+
 
 
 
